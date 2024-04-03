@@ -1,5 +1,5 @@
 class SortingAlgorithms(object):
-  def selection_sort(list):
+  def selectionsort(list):
     for i in range(len(list)):
       curr = min = list[i]
       min_index = i
@@ -9,9 +9,13 @@ class SortingAlgorithms(object):
       list[i], list[min_index] = min, curr
       return list
 // TODO 
-  def heap_sort(list, bottom_up=True):
+  def heapsort(list, bottom_up=True):
     heap = # heapify
     heap.size = len(list)
     for i in range(len):
 
 // TODO
+  def mergesort(list):
+
+// TODO
+  def quicksort(list):
