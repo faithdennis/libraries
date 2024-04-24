@@ -22,10 +22,9 @@ class SortingAlgorithms(object):
 // TODO
   def insertsort(list):
     for i in range(1, len(list)):
-      j = i - 1
-      while list[i] < list[j]:
-        curr = list[i]
-        list[i] = list[j]
-        list[j] = curr
-        i, j = j, j - 1
+      j = i
+      while list[j] < list[j - 1]:
+        curr = list[j]
+        list[j], list[j - 1] = list[j - 1], curr
+        j = j - 1
       return list
