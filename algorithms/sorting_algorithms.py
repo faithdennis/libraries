@@ -19,3 +19,13 @@ class SortingAlgorithms(object):
 
 // TODO
   def quicksort(list):
+// TODO
+  def insertsort(list):
+    for i in range(1, len(list)):
+      j = i - 1
+      while list[i] < list[j]:
+        curr = list[i]
+        list[i] = list[j]
+        list[j] = curr
+        i, j = j, j - 1
+      return list
